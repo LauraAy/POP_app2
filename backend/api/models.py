@@ -11,13 +11,12 @@ class Book (models.Model):
     Publisher = models.CharField(max_length=250)
     Repository = models.CharField(max_length=250)
     Call_Num = models.CharField(max_length=250)
-    Vol_Num = models.Int
-
-
-
+    Vol_Num = models.IntegerField(max_length=5)
 
 
 class Evidence(models.Model):
+    Transcription = models.textField
+    Name_Associated
 
 class Provenance_Person(models.Model):
 
