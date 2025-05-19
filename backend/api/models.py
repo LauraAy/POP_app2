@@ -41,6 +41,10 @@ class Evidence(models.Model):
     where_id = models.BooleanField(blank=True, null=True)
     when_id = models.BooleanField(blank=True, null=True)
 
+class Context(models.Model):
+    description = models.CharField(max_length=250)
+    context_type = models.CharField(max_length=250)
+
 class Names(models.Model):
     name = models.CharField(max_length=250)
     date_start = models.IntegerField(max_length=4)
@@ -63,4 +67,13 @@ class Provenance_Agent(models.Model):
 class Image (models.Model):
     image_file_name = models.CharField(max_length=250)
     image_file_size = models.CharField(max_length=250)
+    image_id = models.CharField(max_length=250)
+    image_ext = models.CharField(max_length=250)
+
+
+
+
+
+
+    
 
